@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			property="og:description"
+			content="Website for creating a to-do list" />
+		<meta
+			property="og:url"
+			content="https://to-do-list-dilanespinoza.netlify.app/" />
+		<meta property="og:type" content="website" />
+
+		<title>To Do List | Prakul Agarwal</title>
+		<link rel="stylesheet" href="style.css" />
+
+		<script src="main.js" type="module" defer></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<h1>Task List App</h1>
+				<button class="btn__bars-menu">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path
+							fill="#ffffff"
+							d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+					</svg>
+				</button>
+			</nav>
+		</header>
+
+		<main class="container">
+			<form action="" id="form__task">
+				<input type="text" placeholder="Add your task" id="title__input" />
+				<textarea
+					name="description__input"
+					id="description__input"
+					placeholder="Add your description task..."></textarea>
+				<button type="submit" id="btn__save">Save</button>
+				<button type="submit" id="btn__update">Update</button>
+			</form>
+
+			<div class="container__tasks"></div>
+		</main>
+	</body>
+</html>
